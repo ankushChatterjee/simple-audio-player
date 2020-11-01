@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <audio controls>
+        <source src="/bensound-betterdays.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="audio-player">
+        <canvas height="100" width="480"></canvas>
+        <div class="controls">
+            <button class="play-pause"><span class="material-icons">
+                play_arrow
+                </span>
+            </button>
+            <input type="range" class="seekbar"></input>
+            <span class="material-icons white">
+                volume_down
+            </span>
+            <input type="range" class="volume"></input>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
